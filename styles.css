@@ -1,0 +1,109 @@
+/* Genel sıfırlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 40px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ce9c9c; /* Arka plan rengi */
+  color: #F6D1D1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:8px;
+  height: 100vh;
+  text-align: center;
+}
+
+header {
+  margin-top:40px;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+
+  flex-direction: column;
+  font-size: 1.8em;
+  color: #5C0002;
+}
+
+
+
+.card-wrapper {
+  perspective: 1000px; /* 3D perspektif */
+}
+
+/* Kartın temel yapısı */
+.card {
+  flex-direction: column;
+  width: 800px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d; /* 3D dönüşümü korumak için */
+  transform: rotateY(0deg); /* Başlangıçta kart düz */
+  transition: transform 1s; /* Dönüşüm geçişi */
+}
+
+/* Kartın Ön Yüzü */
+.front, .back {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+  padding: 20px;
+  border-radius: 8px;
+  backface-visibility: hidden; /* Arka yüzü gizler */
+  gap: 60px;
+}
+
+.front {
+  background-color: #F6D1D1;
+  color: #5C0002;
+}
+
+/* Kartın Arka Yüzü */
+.back {
+  margin-top:40px;
+  background-color: #5C0002;
+  color: #F6D1D1;
+  transform: rotateY(180deg); /* Arka yüzü döndür */
+}
+
+/* Buton Stili */
+button {
+  background-color: #5C0002;
+  color: #F6D1D1;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #ae5f9c;
+}
+
+/* Kart döndüğünde sınıf eklenecek */
+.card.flipped {
+  transform: rotateY(180deg); /* Kartı 180 derece döndür */
+}
+
+footer {
+  font-size: 0.7em;
+  color: #888;
+}

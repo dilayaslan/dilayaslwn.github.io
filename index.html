@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilay Aslan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-wrapper">
+        <!-- Kartın kendisi -->
+        <div class="card" id="card">
+            <!-- Kartın Ön Yüzü -->
+            <div class="front">
+                <header>
+                    <h1><span id="name"></span></h1>
+                </header>
+        
+                <section id="homework">
+                    <h2>Homework List</h2>
+                
+                    <button onclick="window.location.href='homework1.c';">Ödev 1</button>
+                    <button onclick="window.location.href='homework2.c';">Ödev 2</button>
+                    <button onclick="window.location.href='homework3.c';">Ödev 3</button>
+                    <button onclick="window.location.href='homework4.c';">Ödev 4</button>
+                
+                </section>
+                <footer>
+                    <p>&copy;2025 Tüm Hakları Saklıdır.</p>
+                </footer>
+
+            </div>
+
+            <!-- Kartın Arka Yüzü -->
+            <div class="back">
+                
+                <h3>About Me</h3>
+                
+                <p>I was born on September 20, 2005, in Ankara. I completed my high school education at Özel Büyük Fen Lisesi. Currently, I am continuing my studies as a first-year student in Electrical and Electronics Engineering at Hacettepe University.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Geçişi tetikleyen Buton -->
+    <button id="flipButton">Kartı Döndür</button>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
