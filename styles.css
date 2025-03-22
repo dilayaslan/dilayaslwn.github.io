@@ -72,6 +72,7 @@ header h1 {
 
 /* Kartın Arka Yüzü */
 .back {
+  font-family: "Abril Fatface", serif;
   background-color: #5C0002;
   color: #F6D1D1;
   transform: rotateY(180deg); /* Arka yüzü döndür */
