@@ -64,12 +64,13 @@ h3 {
   padding: 20px;
   border-radius: 8px;
   backface-visibility: hidden; /* Arka yüzü gizler */
-  gap: 40px;
+  
 }
 
 .front {
   background-color: #F6D1D1;
   color: #5C0002;
+  gap: 40px;
 }
 
 /* Kartın Arka Yüzü */
@@ -78,6 +79,7 @@ h3 {
   background-color: #5C0002;
   color: #F6D1D1;
   transform: rotateY(180deg); /* Arka yüzü döndür */
+  gap: 35px;
 }
 
 a svg {
