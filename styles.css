@@ -64,7 +64,7 @@ h3 {
   padding: 20px;
   border-radius: 8px;
   backface-visibility: hidden; /* Arka yüzü gizler */
-  gap: 60px;
+  gap: 40px;
 }
 
 .front {
@@ -79,6 +79,16 @@ h3 {
   color: #F6D1D1;
   transform: rotateY(180deg); /* Arka yüzü döndür */
 }
+
+a svg {
+  color: #F6D1D1; /* Siyah renk */
+  transition: color 0.3s ease;
+}
+
+a:hover svg {
+  color: #ae5f9c; /* Hover durumunda renk değişimi (örneğin turuncu) */
+}
+
 
 /* Buton Stili */
 button {
